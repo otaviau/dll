@@ -98,15 +98,4 @@ public class DoubleLinkList20 {
         }
         return null;
     }
-    public static Mahasiswa20 inputMahasiswa(Scanner sc) {
-        System.out.print("NIM: ");
-        String nim = sc.nextLine();
-        System.out.print("Nama: ");
-        String nama = sc.nextLine();
-        System.out.print("Kelas: ");
-        String kelas = sc.nextLine();
-        System.out.print("IPK: ");
-        double ipk = sc.nextDouble(); sc.nextLine();
-        return new Mahasiswa20(nim, nama, kelas, ipk);
-    }
 }
