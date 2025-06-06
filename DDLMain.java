@@ -12,6 +12,7 @@ public class DDLMain {
             System.out.println("4. Hapus di akhir");
             System.out.println("5. Menampilkan data");
             System.out.println("6. Cari mahasiswa berdasarkan NIM");
+            System.out.println("7. Tambah data setelah NIM tertentu");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = sc.nextInt(); sc.nextLine();
@@ -43,6 +44,12 @@ public class DDLMain {
                     } else {
                         System.out.println("Data tidak ditemukan.");
                     }
+                    break;
+                case 7:
+                    System.out.print("Masukkan NIM yang dicari sebagai posisi sisip: ");
+                    String keyNim = sc.nextLine();
+                    Mahasiswa20 mhsInsert = inputMahasiswa(sc);
+                    list.insertAfter(keyNim, mhsInsert);
                     break;
                 case 0:
                     System.out.println("Keluar dari program.");
